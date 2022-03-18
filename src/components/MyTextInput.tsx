@@ -3,7 +3,12 @@ import {StyleSheet, TextInput, TextInputProps} from 'react-native';
 
 export function MyTextInput(props: TextInputProps) {
   return (
-    <TextInput placeholderTextColor="#727272" style={styles.input} {...props} />
+    <TextInput
+      autoCapitalize="none"
+      placeholderTextColor="#727272"
+      style={styles.input}
+      {...props}
+    />
   );
 }
 
