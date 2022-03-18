@@ -1,9 +1,17 @@
 import React from 'react';
-import {Text, TextProps, StyleSheet} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {colors} from '../colors';
 
-export function MyLink(props: TextProps) {
-  return <Text style={styles.text} {...props} />;
+interface MyLinkProps {
+  title: string;
+  onPress: () => void;
+}
+export function MyLink({title, onPress}: MyLinkProps) {
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <Text style={styles.text}>{title}</Text>
+    </TouchableOpacity>
+  );
 }
 
 const styles = StyleSheet.create({
