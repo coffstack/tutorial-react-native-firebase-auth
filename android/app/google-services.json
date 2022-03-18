@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865105145376",
+    "project_id": "coffstack-tutorial",
+    "storage_bucket": "coffstack-tutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865105145376:android:425c8ce1de8822452b5645",
+        "android_client_info": {
+          "package_name": "com.reactnativefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865105145376-5nnfalo1ntik8nm93f1t9sjqctogh5vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR2MfmE-L2WYgVKWj24yV7vR6bWyAN-Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865105145376-5nnfalo1ntik8nm93f1t9sjqctogh5vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
