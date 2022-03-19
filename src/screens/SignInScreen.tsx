@@ -32,6 +32,17 @@ export function SignInScreen() {
       });
   }
 
+  function signIn() {
+    auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        console.log('user is authenticated');
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+
   return (
     <View style={[styles.container, {justifyContent: 'center'}]}>
       <Image resizeMode="contain" source={logo} style={{width: 200}} />
@@ -43,7 +54,7 @@ export function SignInScreen() {
         onChangeText={setPassword}
       />
 
-      <MyButton title="Entrar no App" />
+      <MyButton onPress={signIn} title="Entrar no App" />
 
       <MyLink title="Cadastrar" onPress={signUp} />
     </View>
